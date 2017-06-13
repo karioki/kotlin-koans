@@ -2,12 +2,13 @@ package iii_conventions
 
 import util.TODO
 import iii_conventions.TimeInterval.*
+import kotlin.coroutines.experimental.EmptyCoroutineContext.plus
 
 fun todoTask29(): Nothing = TODO(
     """
         Task 29.
         Implement a kind of date arithmetic. Support adding years, weeks and days to a date.
-        Use classes MyDate and TimeInterval.
+        Use classes MyD ate and TimeInterval.
         Use a utility function MyDate.addTimeIntervals.
         Uncomment the commented line and make it compile.
 
@@ -20,12 +21,10 @@ fun todoTask29(): Nothing = TODO(
     })
 
 fun task29_1(today: MyDate): MyDate {
-    todoTask29()
-//    return today + YEAR + WEEK
+    return today + YEAR + WEEK
 }
 
 fun task29_2(today: MyDate): MyDate {
-    todoTask29()
-//    return today + YEAR * 2 + WEEK * 3 + DAY * 5
+    return today + YEAR * 2 + WEEK * 3 + DAY * 5
 }
 

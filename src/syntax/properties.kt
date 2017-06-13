@@ -23,6 +23,8 @@ class A {
 val String.size: Int
     get() = length
 
+fun something() = "arjun".size
+
 class B {
     val i: Int by Delegates.notNull()
 }

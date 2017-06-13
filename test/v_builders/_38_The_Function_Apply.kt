@@ -26,4 +26,8 @@ class _38_The_Function_Apply {
         }
         assertEquals("Map should be filled with the right values", expected, actual)
     }
+
+    @Test fun testStr() {
+        assertEquals(listOf(1, 2, 3, 4), str())
+    }
 }
