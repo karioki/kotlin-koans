@@ -33,7 +33,7 @@ class RepeatedTimeInterval(val ti: TimeInterval, val n: Int)
 
 class DateRange(val start: MyDate, val endInclusive: MyDate) {
     operator fun contains(date: MyDate): Boolean {
-        return start < date && date < endInclusive
+        return start <= date && date <= endInclusive
     }
 
     operator fun iterator(): Iterator<MyDate> {
